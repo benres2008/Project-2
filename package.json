@@ -1,0 +1,25 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Project 2 - Black Market e-commerce store",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benres2008/Project-2.git"
+  },
+  "author": "Matt Hiatt, Daniel Viramontes, Ben Resnicoff, Trey Jahner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benres2008/Project-2/issues"
+  },
+  "homepage": "https://github.com/benres2008/Project-2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
