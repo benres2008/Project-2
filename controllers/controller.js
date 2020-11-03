@@ -2,54 +2,54 @@ var express = require("express");
 
 var router = express.Router();
 
-var market = require("../models/model.js");
+// var market = require("../models/model.js");
 
 router.get("/", function(req, res) {
-  market.all(function(data) {
-    var hbsObject = {
-      markets: data
-    };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
-  });
+  // market.all(function(data) {
+    // var hbsObject = {
+    //   markets: data
+    // };
+    // console.log(hbsObject);
+    res.render("index");
+  // });
 });
 
-router.post("/api/markets", function(req, res) {
-  market.create([
-    "product", "description"
-  ], [
-    req.body.product, req.body.description
-  ], function(result) {
-    res.json({ id: result.insertId });
-  });
-});
+// router.post("/api/markets", function(req, res) {
+//   market.create([
+//     "product", "description"
+//   ], [
+//     req.body.product, req.body.description
+//   ], function(result) {
+//     res.json({ id: result.insertId });
+//   });
+// });
 
-router.put("/api/markets/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+// router.put("/api/markets/:id", function(req, res) {
+//   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
+//   console.log("condition", condition);
 
-  market.update({
-    product: req.body.product
-  }, condition, function(result) {
-    if (result.changedRows == 0) {
-      return res.status(404).end();
-    } else {
-      res.status(200).end();
-    }
-  });
-});
+//   market.update({
+//     product: req.body.product
+//   }, condition, function(result) {
+//     if (result.changedRows == 0) {
+//       return res.status(404).end();
+//     } else {
+//       res.status(200).end();
+//     }
+//   });
+// });
 
-router.delete("/api/markets/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+// router.delete("/api/markets/:id", function(req, res) {
+//   var condition = "id = " + req.params.id;
 
-  market.delete(condition, function(result) {
-    if (result.affectedRows == 0) {
-      return res.status(404).end();
-    } else {
-      res.status(200).end();
-    }
-  });
-});
+//   market.delete(condition, function(result) {
+//     if (result.affectedRows == 0) {
+//       return res.status(404).end();
+//     } else {
+//       res.status(200).end();
+//     }
+//   });
+// });
 
 module.exports = router;

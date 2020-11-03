@@ -1,10 +1,11 @@
-@import "https: //stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* @import "https: //stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; */
 body{
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     /* background: url; */
     background-size: cover;
+    background-color: #04fa7f;
 }
 
 .login{
