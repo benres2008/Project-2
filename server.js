@@ -16,3 +16,14 @@ app.use(routes);
 app.listen(PORT, function() {
   console.log("Server listening on: http://localhost:" + PORT);
 });
+
+
+
+// GATHERING HTML ELEMENTS AND MAKING THEM TO VARIABLES
+
+// Q&A
+var buttonA = document.getElementById("a");
+var buttonB = document.getElementById("b");
+var buttonC = document.getElementById("c");
+var buttonD = document.getElementById("d");
+var questionsElement = document.getElementById("questions");
