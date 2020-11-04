@@ -2,7 +2,26 @@ var express = require("express");
 
 var router = express.Router();
 
+router.get("/", (req, res) => {
+  //handle root
+});
+
+router.get("/")
+
 // var market = require("../models/model.js");
+
+// Home page route.
+// router.get('/', function (req, res) {
+//   res.send('home page');
+// });
+
+// product list page route.
+// router.get('/products', function (req, res) {
+//   res.send('products');
+// });
+
+// var marketContent = require('/'); // Replace the path from '/'
+// app.use('/', marketContent);
 
 router.get("/", function(req, res) {
   // market.all(function(data) {
@@ -13,6 +32,7 @@ router.get("/", function(req, res) {
     res.render("index");
   // });
 });
+
 
 // router.post("/api/markets", function(req, res) {
 //   market.create([
@@ -30,6 +50,22 @@ router.get("/", function(req, res) {
 //   console.log("condition", condition);
 
 //   market.update({
+//     product: req.body.product
+//   }, condition, function(result) {
+//     if (result.changedRows == 0) {
+//       return res.status(404).end();
+//     } else {
+//       res.status(200).end();
+//     }
+//   });
+// });
+
+// router.put("/api/markets/:products", function(req, res) {
+//   var condition = "products = " + req.params.id;
+
+//   console.log("condition", condition);
+
+//   products.update({
 //     product: req.body.product
 //   }, condition, function(result) {
 //     if (result.changedRows == 0) {
