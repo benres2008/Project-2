@@ -10,7 +10,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var routes = require("./controllers/catsController.js");
+var routes = require("./controllers/controller.js");
 app.use(routes);
 
 app.listen(PORT, function() {
@@ -18,12 +18,3 @@ app.listen(PORT, function() {
 });
 
 
-
-// GATHERING HTML ELEMENTS AND MAKING THEM TO VARIABLES
-
-// Q&A
-var buttonA = document.getElementById("a");
-var buttonB = document.getElementById("b");
-var buttonC = document.getElementById("c");
-var buttonD = document.getElementById("d");
-var questionsElement = document.getElementById("questions");
