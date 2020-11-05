@@ -88,4 +88,9 @@ router.get("/", function(req, res) {
 //   });
 // });
 
+router.get("/api/inventory",(req,res)=>{
+  
+
+})
+
 module.exports = router;
