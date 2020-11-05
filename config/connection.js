@@ -1,4 +1,9 @@
 var mysql = require("mysql");
+const express = require("express")
+var app = express()
+const bodyparser = require("body-parser")
+
+app.use(bodyparser.json())
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -15,5 +20,13 @@ connection.connect(function(err) {
   }
   console.log("connected as id " + connection.threadId);
 });
+
+app.listen(3306,()=>console.log("Express server is running at PORT no: 3306"))
+
+app.get("/",(res,req)=>{
+  mysqlConnection.query("SELECT * FROM ",(err,rows,fields)=>{
+
+  })
+})
 
 module.exports = connection.js;
