@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="currency_converter\converter.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Currency Converter</h1>
+      </div>
+      <div class="date">xx-xx-xxxx</div>
+      <ul class="currencyType"></ul>
+      <li class="currency" id="USD">
+        <img src="insertamericanflaghere.gif" class="flag" />
+        <div class="info">
+          <p class="input">
+            <span class="currencySymbol">xx</span><input placeholder="0.00" />
+          </p>
+          <p class="currencyName">USD - US Dollar</p>
+          <p class="baseRate">1 USD = 1 USD</p>
+        </div>
+        <span class="typeClose">&times;</span>
+      </li>
+      <ul class="addCurrencyTypeList"></ul>
+      <button class="addBtn">Add This Currency</button>
+    </div>
+
+    <script src="currency_converter\app.js"></script>
+  </body>
+</html>
