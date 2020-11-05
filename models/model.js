@@ -24,4 +24,4 @@ var market = {
 };
 
 // Export the database functions for the controller (catsController.js).
-module.exports = model;
+// module.exports = model;
