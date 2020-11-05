@@ -3,41 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Market Shopping</title>
+    <title>Code Quiz Assigment</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-
 <!-- Home Page  -->
         <div id="homepage">
-            <h2>BLACK MARKET SHOPPING  </h2>
-            
+            <h2>Black Market Shopping </h2>
+            <h1></h1> 
             <!-- Buttons -->
         <button id="startbtn">Start Shopping</button>
+       
         </div>
-
-        
 <!-- Quiz -->
         <div id="quiz">
-            
+          
 
 <!-- Questions -->
                 <div id="questions"><p>Questions Placeholder</p></div>
                     <button id="a" onclick="checkAnswer('a')">A</button>
                     <button id="b" onclick="checkAnswer('b')">B</button>
-                    <button id="c" onclick="checkAnswer('c')">C</button>
-                    <button id="d" onclick="checkAnswer('d')">D</button>
+                 
                 <div id="result"></div>
         </div>
-
-<!-- ALL QUESTIONS ANSWERED PAGE -->
+<!-- Game Over -->
         <div id="gameover">
 
             <div id="finalScore"></div>
            
+    
             <input type="text" size = "40" placeholder="ENTER YOUR INITIALS!" name="intials" id="initials"/>
-            <button id="submitScore">SHOW ME MY BLACK MARKET ITEMS</button>
+            <button id="submitScore">Show Me My Black Market Item</button>
         </div>
 
 <!-- High Score  -->
@@ -51,14 +48,14 @@
             <div id = "highscore-score"></div>
         </div>
 
-<!-- SHOP AGAIN -->
+<!-- Play Again / -->
         <div id="endGameBtns">
-            <button id="playAgain" onclick="replayQuiz()">SHOP AGAIN</button>
-           
+            <button id="playAgain" onclick="shopAgain()">Shop Again</button>
+            <!-- <button id="clearHighscore" onclick="clearScore()">Clear High Scores</button> -->
         </div>
 
     </div>
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
