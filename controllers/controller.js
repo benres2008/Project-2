@@ -52,4 +52,9 @@ router.delete("/api/markets/:id", function(req, res) {
   });
 });
 
+router.get("/api/inventory",(req,res)=>{
+  
+
+})
+
 module.exports = router;

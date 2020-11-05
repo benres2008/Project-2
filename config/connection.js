@@ -23,10 +23,7 @@ connection.connect(function(err) {
 
 app.listen(3306,()=>console.log("Express server is running at PORT no: 3306"))
 
-app.get("/",(res,req)=>{
-  mysqlConnection.query("SELECT * FROM ",(err,rows,fields)=>{
 
-  })
 })
 
 module.exports = connection.js;
