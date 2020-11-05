@@ -10,3 +10,5 @@ insert into products (product_name, delieverable, price, currency, quantity, pay
 insert into products (product_name, delieverable, price, currency, quantity, payment_method) values('Fake Passport', true, '1350', 'USD', 'per passport', 'bitcoin, etherium, litecoin');
 insert into products (product_name, delieverable, price, currency, quantity, payment_method) values('Fake Twitter Followers', true, '1', 'USD', 'per follower', 'bitcoin, etherium, litecoin');
 insert into products (product_name, delieverable, price, currency, quantity, payment_method) values('Fake Instagram Followers', true, '2', 'USD', 'per follower', 'bitcoin, etherium, litecoin');
+
+// create booleans true or false based on the questions from the questionApp questions that prompt the user.
