@@ -9,4 +9,4 @@ insert into products (product_name, edible, price, currency, quantity, payment_m
 insert into products (product_name, edible, price, currency, quantity, payment_method, item_type) values('Deer Antler', false, '5000', 'USD', 'per rack', 'bitcoin', 'horn/tusk/antler');
 insert into products (product_name, edible, price, currency, quantity, payment_method, item_type) values('Bullet Ants', false, '1000', 'USD', 'per spawn', 'bitcoin', 'specimen');
 insert into products (product_name, edible, price, currency, quantity, payment_method, item_type) values('Ayam Cemani Rooster', false, '2500', 'USD', 'per chicken', 'bitcoin', 'specimen' );
-insert into products (product_name, edible, price, currency, quantity, payment_method, item_type) values('White Lion Cub', false, '150000' 'USD', 'per cub', 'bitcoin', 'specimen' );
+insert into products (product_name, edible, price, currency, quantity, payment_method, item_type) values('White Lion Cub', false, '150000', 'USD', 'per cub', 'bitcoin', 'specimen' );

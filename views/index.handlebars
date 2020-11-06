@@ -1,10 +1,27 @@
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+<div class = "container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the Black Market Menu!</h1>
+    
+    <hr class="my-4">
+    <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#each markets}}
+        {{>products/product-li}}
+      {{/each}}
+    </div>
   </div>
+  <div class="card" style="width: 36rem;">
+  <div class="card-body">
+    <h5 class="card-title">Product Name: <span id = "productName"></span></h5>
+    <h5 class="card-title">Edible?: <span id = "edible"></span></h5>
+    <h5 class="card-title">Price: <span id = "price"></span></h5>
+    <h5 class="card-title">Currency: <span id = "currency"></span></h5>
+    <h5 class="card-title">Quantity: <span id = "quantity"></span></h5>
+    <h5 class="card-title">Payment Method: <span id = "paymentMethod"></span></h5>
+    <h5 class="card-title">Item Type: <span id = "itemType"></span></h5>
+  </div>
+</div>
 </div>
