@@ -2,13 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 
-router.get("/", (req, res) => {
-  //handle root
-});
-
-router.get("/")
-
-// var market = require("../models/model.js");
+// var market = require("../models/product.js")();
 
 // Home page route.
 // router.get('/', function (req, res) {
@@ -25,14 +19,18 @@ router.get("/")
 
 router.get("/", function(req, res) {
   // market.all(function(data) {
-    // var hbsObject = {
-    //   markets: data
-    // };
-    // console.log(hbsObject);
-    res.render("index");
+  //   var hbsObject = {
+  //     markets: data
+  //   };
+  //   console.log(hbsObject);
+  //   res.render("index",hbsObject);
   // });
+  res.render("index")
 });
 
+router.get("/login", function(req,res){
+  res.render("login")
+});
 
 // router.post("/api/markets", function(req, res) {
 //   market.create([
