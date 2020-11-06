@@ -1,28 +1,28 @@
-Black Market Menu:
+# Black Market Menu:
 
 Select an item from our extensive database and view its details!
 
-Description:
+# Description:
 
 Our website allows users to register an account with a username and password. They are then directed to a Deep Web dropdown menu where they can select any one of our numerous shady items. Depending on which item they click on, this item is then displayed for them with the following information: name, edible? (y/n), price, currency, quantity, payment method, and item type.  
 
-Installation:
+# Installation:
 
 You must intall mysql, express, and express-handlebars to use this app.
 
-Usage:
+# Usage:
 
 Users can create a username and password by filling out the forms. They can select an item by using their mouse.
 
-Credits:
+# Credits:
 
 Ben Resnicoff (https://github.com/)
 Matt Hiatt (https://github.com/)
-Daniel Vieramontes (https://github.com/)
+Daniel Viramontes (https://github.com/)
 
-License: MIT License 
+# License: MIT License 
 
-Copyright (c) 2020 Ben Resnicoff, Chris Kalama, Agnes Chueng, Justin Yocus
+Copyright (c) 2020 Ben Resnicoff, Matt Hiatt,Daniel Viramontes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
