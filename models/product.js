@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BOOLEAN
     },
     price: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.INTEGER,
         // allowNull: false
     },
     currency: {
