@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     price: {
         type: DataTypes.NUMBER,
-        allowNull: false
+        // allowNull: false
     },
     currency: {
         type: DataTypes.STRING,
